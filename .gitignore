@@ -9,7 +9,7 @@ DATASETS
 datasets
 datasets/
 DATA
-OUTPUT
+#OUTPUT
 submitit
 wandb/
 runs/
