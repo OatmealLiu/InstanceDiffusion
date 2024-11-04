@@ -128,6 +128,7 @@ def run(meta, model, autoencoder, text_encoder, diffusion, clip_model, clip_proc
             refined_image = pipe(prompt, image=sample, strength=strength, num_inference_steps=steps).images[0]
             refined_image.save(  os.path.join(output_folder, img_name.replace('.png', '_xl_s{}_n{}.png'.format(strength, steps)))   )
         sample.save(  os.path.join(output_folder, img_name)   )
+        print(f"{image_id} --- {type(sample)}")
 
 def rescale_box(bbox, width, height):
     x0 = bbox[0]/width
