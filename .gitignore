@@ -16,7 +16,7 @@ runs/
 results-comparisons/
 src/
 checkpoints
-scripts/
+#scripts/
 GroundingDINO/
 recognize-anything/
 Grounded-Segment-Anything/
