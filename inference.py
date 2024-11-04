@@ -179,7 +179,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    return_att_masks = False
+    return_att_masks = True
     ckpt = args.ckpt
 
     seed = args.seed
